@@ -1,0 +1,46 @@
+.google {
+  position: relative;
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: var(--p-2);
+  border-radius: var(--border-radius);
+}
+
+.google__input {
+  grid-area: google;
+  width: 100%;
+  padding: var(--p-2);
+  padding-inline: 1.8rem;
+  border: none;
+  outline: none;
+  background-color: var(--light-color);
+  color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  letter-spacing: 1px;
+}
+
+.google__input::placeholder {
+  font-size: var(--font-size-sm);
+  font-family: Vazirmatn;
+}
+
+.google__logo,
+.google__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.google__logo {
+  right: 15px;
+  width: 1rem;
+}
+
+.google__icon {
+  font-size: var(--font-size-md);
+  left: 15px;
+  background-color: var(--dark-blue-color);
+  color: var(--primary-color);
+  padding: 5px 12px;
+  border-radius: var(--border-radius);
+}

@@ -1,0 +1,63 @@
+.time {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: center;
+  gap: var(--gap);
+}
+.time__digital {
+  font-size: var(--font-size-lg);
+  color: var(--info-color);
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.time__solar-content {
+  color: #222;
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+}
+
+.dates {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: var(--gap);
+  position: relative;
+}
+
+.dates::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 40%;
+  width: 2px;
+  height: 50%;
+  background-color: var(--border-color);
+}
+
+.hijri__item,
+.cristian__item {
+  font-size: 10px;
+}
+.cristian,
+.hijri {
+  width: 100%;
+  direction: ltr;
+  text-align: center;
+  padding: 0;
+}
+.hijri {
+  direction: rtl;
+  padding-left: 5px;
+}
+
+.alternative__select {
+  border-color: var(--border-color);
+  color: var(--dark-blue-color);
+  border-radius: var(--border-radius);
+}

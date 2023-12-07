@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chrome dastyaar</title>
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css" />
+    <link rel="stylesheet" href="assets/fonts/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <!-- header is started -->
+      <header class="header">
+        <div class="header__box">
+          <i class="fa-solid fa-user header__icon"></i>
+          <i class="fas fa-cog icon header__icon"></i>
+        </div>
+      </header>
+      <!-- header is ended  -->
+      <!-- main is started  -->
+      <main class="main">
+        <section class="google">
+          <input
+            type="text"
+            placeholder="جستجو در گوگل"
+            class="google__input"
+            maxlength="40"
+          />
+          <img
+            src="assets/images/google.svg"
+            alt="google"
+            class="google__logo"
+          />
+          <i class="fas fa-search google__icon"></i>
+        </section>
+        <section class="time-weather">
+          <div class="time">
+            <span class="time__digital"></span>
+            <div class="time__solar"></div>
+            <div class="dates">
+              <div class="hijri">
+                <span id="year" class="hijri__item"></span>
+                <span id="month" class="hijri__item"></span>
+                <span id="day" class="hijri__item"></span>
+              </div>
+              <div class="cristian">
+                <span id="year-js" class="cristian__item"></span>
+
+                <span id="month-js" class="cristian__item"></span>
+
+                <span id="date-js" class="cristian__item"></span>
+              </div>
+            </div>
+            <div class="alternative">
+              <select class="alternative__select">
+                <option value="timer">تایمر</option>
+              </select>
+              <select class="alternative__select">
+                <option value="oghat">اوقات شرعی</option>
+              </select>
+            </div>
+          </div>
+          <div class="weather">
+            <div class="weather__row">
+              <span class="weather__degree"></span>
+              <img id="weathericon" class="weather__icon" />
+            </div>
+            <div class="weather__row">
+              <p class="weather__text"></p>
+              <span class="weather__emoji"></span>
+            </div>
+            <div class="weather__row">
+              <span class="weather__max"></span>
+              <span class="weather__min"></span>
+            </div>
+            <select class="alternative__select">
+              <option value="predict">پیش بینی</option>
+            </select>
+          </div>
+        </section>
+        <section class="websites">
+          <div class="websites__item dam">
+            <div>
+              <i class="fas fa-ellipsis-v"></i>
+              <i class="fas fa-ellipsis-v"></i>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+
+            <p>دم دستی</p>
+          </div>
+          <div class="websites__item xxx">
+            <div class="websites__img"></div>
+          </div>
+          <div class="websites__item">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="websites__item">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="websites__item">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="websites__item">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="websites__item">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="websites__item">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="websites__item">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="websites__item">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="websites__item">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="websites__item">
+            <i class="fas fa-plus"></i>
+          </div>
+        </section>
+      </main>
+      <!-- main is ended  -->
+    </section>
+    <script src="assets/scripts/time.js"></script>
+    <script src="assets/scripts/date.js"></script>
+    <script src="assets/scripts/weather.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <div id="log"></div>
+  </body>
+</html>

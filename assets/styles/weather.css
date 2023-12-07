@@ -1,0 +1,37 @@
+.weather {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: center;
+  gap: var(--gap);
+}
+
+.weather__row {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: var(--gap);
+}
+
+.weather__degree {
+  color: var(--secondary-color);
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.weather__icon {
+  width: 35px;
+  height: 30px;
+  filter: contrast(0.5);
+}
+
+.weather__text {
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+}
+.weather__max,
+.weather__min {
+  font-size: 10px;
+  padding: 0;
+}

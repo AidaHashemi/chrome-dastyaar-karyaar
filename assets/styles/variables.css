@@ -1,0 +1,15 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #9ea1b0;
+  --light-color: #f3f4f6;
+  --info-color: #56a0ee;
+  --dark-blue-color: #3d518f;
+  --border-color: #e5e7eb;
+  --border-radius: 0.75rem;
+  --font-size-lg: 1rem;
+  --font-size-md: 0.8rem;
+  --font-size-sm: 0.6rem;
+  --row-gap: 0.875rem;
+  --gap: 0.5rem;
+  --p-2: 0.5rem;
+}
