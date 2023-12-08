@@ -1,17 +1,15 @@
 const form = document.getElementById("form");
 const inputBox = document.getElementById("input-box");
 const listcontainer = document.getElementById("list");
-
-console.log(form);
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (inputBox.value === "") {
     alert("you must write something");
   } else {
-    listcontainer.innerHTML += `<li class="list-item">
-   <span class="list-name">
-   <i class="fa-regular fa-square-check cheked-icon"></i>
-     <i class="far fa-square check-icon"></i>${inputBox.value}
+    listcontainer.innerHTML += `<li class="todo__item">
+   <span class="todo__task">
+   <i class="fa-regular fa-square-check todo__check"></i>
+  <i class="far fa-square check-icon todo__square"></i>${inputBox.value}
    </span>
      <span class="list-icons">
        <i class="fas fa-pen"></i>

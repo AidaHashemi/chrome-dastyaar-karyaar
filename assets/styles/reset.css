@@ -19,3 +19,35 @@ ul,
 li {
   list-style: none;
 }
+
+.d-flex {
+  display: flex;
+}
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.d-grid {
+  display: grid;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+
+.gap-lg {
+  gap: 1rem;
+}
+
+.gap-md {
+  gap: 0.5rem;
+}
+
+.w-100 {
+  width: 100%;
+}

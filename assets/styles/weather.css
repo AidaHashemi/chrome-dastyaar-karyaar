@@ -23,7 +23,6 @@
 .weather__icon {
   width: 35px;
   height: 30px;
-  filter: contrast(0.5);
 }
 
 .weather__text {
