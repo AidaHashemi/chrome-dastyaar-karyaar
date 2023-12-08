@@ -11,23 +11,44 @@
 .todo__list {
   height: 270px;
   overflow-y: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: var(--p-2);
+  flex-direction: column-reverse;
+  justify-content: start;
 }
 
 .todo__item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   padding: var(--p-2);
 }
 
 .todo__task {
+  width: 100%;
   font-size: var(--font-size-lg);
 }
 
+.todo__inputValue {
+  width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.todo__square {
+  color: #248a5088;
+  background-color: var(--border-color);
+}
 .todo__check {
   display: none;
+  color: #248a5088;
+}
+
+.todo__icons {
+  color: var(--secondary-color);
+  font-weight: lighter;
+  font-size: var(--font-size-md);
+  cursor: pointer;
 }
 
 .todo__row {
@@ -40,6 +61,7 @@
   border: 1px solid var(--border-color);
   padding: var(--p-2);
   font-size: var(--font-size-lg);
+  font-family: Vazirmatn;
 }
 
 .todo__input::placeholder {
