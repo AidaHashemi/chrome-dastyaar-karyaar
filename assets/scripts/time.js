@@ -15,7 +15,6 @@ async function showTime() {
     hour = hour < 10 ? "0" + hour : hour;
     var strTime = hour + ":" + minutes;
     // String.prototype.toPersianDigits();
-    // const strong = `<strong>${strTime}</strong>`;
     digitalClockElement.innerHTML = strTime.toPersianDigits();
   } catch (err) {
     console.log(err);

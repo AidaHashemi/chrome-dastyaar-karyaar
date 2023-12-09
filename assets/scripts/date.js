@@ -1,3 +1,11 @@
+const timeSolar = document.createElement("span");
+timeSolar.setAttribute("class", "time__solar");
+time.appendChild(timeSolar);
+let options = { day: "numeric", month: "long" };
+let today = new Date().toLocaleDateString("fa-IR", options);
+timeSolar.innerHTML = today;
+
+///////
 function dc() {
   var monthHTML = document.getElementById("month-js");
   var dateHTML = document.getElementById("date-js");
@@ -50,12 +58,7 @@ setInterval(dc, 1000);
 
 // let today = new Date().toLocaleDateString("fa-IR");
 // console.log(today);
-const timeSolar = document.querySelector(".time__solar");
-let options = { day: "numeric", month: "long" };
-let today = new Date().toLocaleDateString("fa-IR", options);
-timeSolar.innerHTML = `
-<span class="time__solar-content"> ${today} </span>`;
-console.log(today);
+// const timeSolar = document.querySelector(".time__solar");
 
 //////
 
