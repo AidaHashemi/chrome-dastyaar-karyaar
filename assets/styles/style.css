@@ -5,6 +5,7 @@
 @import url("google.css");
 @import url("time.css");
 @import url("weather.css");
+@import url("websites.css");
 @import url("todo.css");
 
 /* :root {
@@ -42,7 +43,6 @@ body {
   gap: var(--row-gap);
   grid-template-areas: "google", "weather", "application", "todo";
 }
-
 .time-weather {
   width: 100%;
   display: grid;
@@ -52,38 +52,4 @@ body {
   border-radius: var(--border-radius);
   height: 200px;
   padding: var(--p-2);
-}
-
-.websites {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--row-gap);
-}
-
-.websites__item {
-  width: 100%;
-  height: 100px;
-  background-color: var(--light-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: var(--border-radius);
-}
-.dam {
-  flex-direction: column;
-}
-.xxx {
-  background-color: #fff;
-}
-.websites__img {
-  width: 100%;
-  height: 100%;
-  background: url("../images/shab-logo_wtfl1TX.webp") no-repeat center;
-  background-size: contain;
-}
-
-.websites__item i {
-  font-size: 35px;
-  color: var(--secondary-color);
-  font-weight: light;
 }

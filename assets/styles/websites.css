@@ -1,0 +1,30 @@
+.websites {
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+
+.websites__item {
+  width: 100%;
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  height: 85px;
+  cursor: pointer;
+}
+
+.websites__img {
+  width: 40px;
+  height: 40px;
+}
+
+.websites__item span {
+  font-size: var(--font-size-md);
+}
+
+.websites__plusIcon {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+.websites__item--color i {
+  color: var(--dark-blue-color);
+  font-size: 1.5rem;
+}
