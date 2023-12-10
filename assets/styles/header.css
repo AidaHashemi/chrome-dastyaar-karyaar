@@ -1,13 +1,13 @@
 .header {
   width: 100%;
   border-radius: var(--border-radius);
-  padding: var(p-2);
+  padding: var(--p-vertical) 0;
   display: flex;
   justify-content: end;
   align-items: center;
 }
 .header__icon {
   color: var(--primary-color);
-  margin-left: 0.5rem;
-  font-size: var(--font-size-md);
+  /* margin-left: 1rem; */
+  font-size: var(--font-size-xl);
 }

@@ -17,18 +17,15 @@
   font-size: var(--font-size-lg);
   font-weight: bold;
 }
-
 .time__gregorian {
   font-size: var(--font-size-sm);
   direction: ltr;
   color: var(--secondary-color);
 }
-
 .time__lunar {
   font-size: var(--font-size-sm);
   color: var(--secondary-color);
 }
-
 .time__select {
   border-color: var(--border-color);
   color: #777;

@@ -2,15 +2,15 @@
   position: relative;
   width: 100%;
   background-color: var(--primary-color);
-  padding: var(--p-2);
+  padding: var(--p-vertical) var(--p-2);
   border-radius: var(--border-radius);
 }
 
 .google__input {
   grid-area: google;
   width: 100%;
-  padding: var(--p-2);
-  padding-inline: 1.8rem;
+  padding: var(--p-vertical) var(--p-2);
+  padding-inline: 2rem;
   border: none;
   outline: none;
   background-color: var(--light-color);
@@ -20,7 +20,7 @@
 }
 
 .google__input::placeholder {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-lg);
   font-family: Vazirmatn;
 }
 
@@ -33,14 +33,14 @@
 
 .google__logo {
   right: 15px;
-  width: 1rem;
+  width: 1.5rem;
 }
 
 .google__icon {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-lg);
   left: 15px;
   background-color: var(--dark-blue-color);
   color: var(--primary-color);
-  padding: 5px 12px;
+  padding: 6px 15px;
   border-radius: var(--border-radius);
 }

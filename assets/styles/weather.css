@@ -1,7 +1,6 @@
 .weather {
   width: 50%;
 }
-
 .weather__degree {
   width: 100%;
   display: inline-block;
@@ -13,16 +12,13 @@
   justify-content: center;
   gap: 1rem;
 }
-
 .weather__icon {
   width: 35px;
 }
-
 .weather__text {
   font-size: var(--font-size-md);
   font-weight: bold;
 }
-
 .weather__emoji {
   margin-right: 10px;
   font-size: var(--font-size-lg);

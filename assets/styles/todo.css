@@ -49,6 +49,12 @@
   font-weight: lighter;
   font-size: var(--font-size-md);
   cursor: pointer;
+
+  display: none;
+}
+
+.todo__item:hover .todo__icons {
+  display: flex;
 }
 
 .todo__row {
