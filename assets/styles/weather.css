@@ -4,7 +4,7 @@
 .weather__degree {
   width: 100%;
   display: inline-block;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: var(--secondary-color);
   font-weight: bold;
   display: flex;
@@ -13,7 +13,7 @@
   gap: 1rem;
 }
 .weather__icon {
-  width: 35px;
+  width: 30px;
 }
 .weather__text {
   font-size: var(--font-size-md);
@@ -32,7 +32,7 @@
 }
 .weather__max,
 .weather__min {
-  font-size: var(--font-size-sm);
+  font-size: 0.5rem;
   color: var(--secondary-color);
 }
 .weather__select {
@@ -42,4 +42,5 @@
   font-weight: lighter;
   padding: 2px 1px;
   cursor: pointer;
+  font-size: 0.7rem;
 }

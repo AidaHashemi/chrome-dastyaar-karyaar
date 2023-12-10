@@ -1,0 +1,30 @@
+@media (min-width: 768px) {
+  body {
+    padding: 3px 120px;
+  }
+  .main {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+      "todo google weather"
+      "todo websites weather"
+      "todo - weather";
+  }
+
+  .todo {
+    grid-area: todo;
+  }
+  .time-weather {
+    grid-area: weather;
+  }
+  .google {
+    grid-area: google;
+  }
+
+  .websites {
+    grid-area: websites;
+  }
+  .websites {
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: flex-start;
+  }
+}

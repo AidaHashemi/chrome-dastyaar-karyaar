@@ -6,10 +6,10 @@
   padding-bottom: var(--p-vertical);
 }
 .todo-heading {
-  font-size: var(--font-size-xl);
+  font-size: 1.1rem;
 }
 .todo__list {
-  height: 270px;
+  height: 70vh;
   overflow-y: auto;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);

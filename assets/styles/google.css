@@ -1,8 +1,8 @@
 .google {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   background-color: var(--primary-color);
-  padding: var(--p-vertical) var(--p-2);
+  padding: var(--p-vertical);
   border-radius: var(--border-radius);
 }
 
