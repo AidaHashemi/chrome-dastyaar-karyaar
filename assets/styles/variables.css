@@ -12,6 +12,7 @@
   --font-size-sm: 0.6rem;
   --row-gap: 0.875rem;
   --gap: 0.5rem;
-  --p-vertical: 0.8rem;
+  --p-vertical: 1rem;
   --p-2: 0.5rem;
+  --m-inline: auto;
 }

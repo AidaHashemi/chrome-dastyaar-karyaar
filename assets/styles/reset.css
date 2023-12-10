@@ -39,15 +39,15 @@ li {
 .align-center {
   align-items: center;
 }
-
+.gap-xl {
+  gap: 1.5rem;
+}
 .gap-lg {
   gap: 1rem;
 }
-
 .gap-md {
   gap: 0.5rem;
 }
-
 .w-100 {
   width: 100%;
 }

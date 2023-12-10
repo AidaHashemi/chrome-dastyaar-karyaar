@@ -1,13 +1,10 @@
 .header {
   width: 100%;
-  border-radius: var(--border-radius);
   padding: var(--p-vertical) 0;
-  display: flex;
+  border-radius: var(--border-radius);
   justify-content: end;
-  align-items: center;
 }
 .header__icon {
   color: var(--primary-color);
-  /* margin-left: 1rem; */
   font-size: var(--font-size-xl);
 }

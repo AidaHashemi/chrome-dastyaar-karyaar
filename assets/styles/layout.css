@@ -3,10 +3,8 @@ body {
   padding: 3px 20px;
 }
 .container {
-  width: 100%;
-  /* max-width: 868px; */
-  margin-inline: auto;
-  display: grid;
+  max-width: 1124px;
+  margin-inline: var(--m-inline);
   grid-template-columns: 1fr;
 }
 

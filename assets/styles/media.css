@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
   body {
-    padding: 3px 120px;
+    padding: 3px 78px;
   }
   .main {
     grid-template-columns: 1fr 2fr 1fr;
@@ -9,7 +9,6 @@
       "todo websites weather"
       "todo - weather";
   }
-
   .todo {
     grid-area: todo;
   }
