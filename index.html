@@ -36,7 +36,10 @@
         </section>
         <section class="time-weather d-flex align-center">
           <section class="time d-flex-col align-center gap-md" id="time">
-            <div class="time__dates" id="time__dates"></div>
+            <div
+              class="time__dates d-flex align-center justify-center w-100 gap-md"
+              id="time__dates"
+            ></div>
             <div class="time__alternative">
               <select class="time__select">
                 <option value="timer">تایمر</option>
@@ -46,22 +49,12 @@
               </select>
             </div>
           </section>
-          <div class="weather">
-            <div class="weather__row">
-              <span class="weather__degree"></span>
-              <img id="weathericon" class="weather__icon" />
+          <div class="weather d-flex-col align-center gap-md" id="weather">
+            <div class="weather__alternative">
+              <select class="weather__select">
+                <option value="predict">پیش بینی</option>
+              </select>
             </div>
-            <div class="weather__row">
-              <p class="weather__text"></p>
-              <span class="weather__emoji"></span>
-            </div>
-            <div class="weather__row">
-              <span class="weather__max"></span>
-              <span class="weather__min"></span>
-            </div>
-            <select class="alternative__select">
-              <option value="predict">پیش بینی</option>
-            </select>
           </div>
         </section>
         <section class="websites d-grid" id="websites">
@@ -99,7 +92,7 @@
     </section>
     <script src="assets/scripts/time.js"></script>
     <script src="assets/scripts/date.js"></script>
-    <!-- <script src="assets/scripts/weather.js"></script> -->
+    <script src="assets/scripts/weather.js"></script>
     <script src="assets/scripts/websites.js"></script>
     <script src="assets/scripts/todo.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

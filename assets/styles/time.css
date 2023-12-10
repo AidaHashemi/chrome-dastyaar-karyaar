@@ -2,37 +2,20 @@
   width: 50%;
 }
 .time__digital {
+  width: 100%;
+  display: inline-block;
   font-size: 1.7rem;
   color: #2a6ff7;
   font-weight: 700;
   letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
 }
 
 .time__solar {
   color: #222;
   font-size: var(--font-size-lg);
   font-weight: bold;
-}
-
-.time__dates {
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
-  gap: var(--gap);
-  position: relative;
-}
-
-.time__dates::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 5px;
-  bottom: 5px;
-  left: 40%;
-  width: 2px;
-  height: 50%;
-  background-color: var(--border-color);
 }
 
 .time__gregorian {
