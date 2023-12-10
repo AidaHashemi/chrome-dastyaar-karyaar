@@ -1,3 +1,6 @@
+.time {
+  width: 50%;
+}
 .time__digital {
   font-size: 1.7rem;
   color: #2a6ff7;
@@ -35,14 +38,19 @@
 .time__gregorian {
   font-size: var(--font-size-sm);
   direction: ltr;
+  color: var(--secondary-color);
 }
 
 .time__lunar {
   font-size: var(--font-size-sm);
+  color: var(--secondary-color);
 }
 
-.alternative__select {
+.time__select {
   border-color: var(--border-color);
-  color: var(--dark-blue-color);
+  color: #777;
   border-radius: var(--border-radius);
+  font-weight: lighter;
+  padding: 2px 1px;
+  cursor: pointer;
 }

@@ -62,10 +62,11 @@ fetch(`https://api.aladhan.com/v1/gToH?
   date=${today.getDate()}-${today.getMonth() + 1}-${today.getFullYear()}`)
   .then((res) => res.json())
   .then((res) => {
-    timeLunar.innerHTML =
+    timeLunar.innerHTML = (
       res.data.hijri.year +
       "/" +
       res.data.hijri.month.ar +
       "/" +
-      res.data.hijri.day;
+      res.data.hijri.day
+    ).toPersianDigits();
   });
