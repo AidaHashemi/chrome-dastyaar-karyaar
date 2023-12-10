@@ -1,31 +1,23 @@
+const timeDates = document.getElementById("time__dates");
 const timeSolar = document.createElement("span");
+const timeGregorian = document.createElement("span");
 timeSolar.setAttribute("class", "time__solar");
+timeGregorian.setAttribute("class", "time__gregorian");
 time.appendChild(timeSolar);
+timeDates.appendChild(timeGregorian);
 let options = { day: "numeric", month: "long" };
 let today = new Date().toLocaleDateString("fa-IR", options);
 timeSolar.innerHTML = today;
 
 ///////
-function dc() {
-  var monthHTML = document.getElementById("month-js");
-  var dateHTML = document.getElementById("date-js");
-  var yearHTML = document.getElementById("year-js");
-
-  var d = new Date();
-  var year = d.getFullYear();
-  var month = d.getMonth();
-  var date = d.getDate();
+function gregorianDate() {
+  var dateConstructor = new Date();
+  var year = dateConstructor.getFullYear();
+  var month = dateConstructor.getMonth();
+  var date = dateConstructor.getDate();
+  var today = dateConstructor.getDay();
   date = addZero(date);
-  var today = d.getDay();
-  var dayName = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
+
   var monthName = [
     "January",
     "February",
@@ -41,10 +33,10 @@ function dc() {
     "Dec",
   ];
 
-  //   todayHTML.innerHTML = dayName[today];
-  dateHTML.innerHTML = date;
-  monthHTML.innerHTML = monthName[month] + "/";
-  yearHTML.innerHTML = year + "/";
+  timeGregorian.innerHTML =
+    `<span id="year-js" class="gregorian__item">${year}/</span>
+  <span id="month-js" class="gregorian__item">${monthName[month]}/</span>
+  <span id="date-js" class="gregorian__item">${date}</span>`.toPersianDigits();
 }
 
 function addZero(i) {
@@ -54,11 +46,7 @@ function addZero(i) {
   return i;
 }
 
-setInterval(dc, 1000);
-
-// let today = new Date().toLocaleDateString("fa-IR");
-// console.log(today);
-// const timeSolar = document.querySelector(".time__solar");
+gregorianDate();
 
 //////
 
