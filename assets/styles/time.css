@@ -37,20 +37,12 @@
   direction: ltr;
 }
 
-/* .cristian,
-.hijri {
-  width: 100%;
-  direction: ltr;
-  text-align: center;
-  padding: 0;
-}
-.hijri {
-  direction: rtl;
-  padding-left: 5px;
+.time__lunar {
+  font-size: var(--font-size-sm);
 }
 
 .alternative__select {
   border-color: var(--border-color);
   color: var(--dark-blue-color);
   border-radius: var(--border-radius);
-} */
+}

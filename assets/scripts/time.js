@@ -1,7 +1,6 @@
 const time = document.getElementById("time");
 const digitalClockElement = document.createElement("span");
 digitalClockElement.setAttribute("class", "time__digital");
-time.prepend(digitalClockElement);
 
 async function showTime() {
   try {

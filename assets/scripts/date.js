@@ -1,15 +1,19 @@
 const timeDates = document.getElementById("time__dates");
 const timeSolar = document.createElement("span");
-const timeGregorian = document.createElement("span");
+const timeGregorian = document.createElement("div");
+const timeLunar = document.createElement("div");
 timeSolar.setAttribute("class", "time__solar");
 timeGregorian.setAttribute("class", "time__gregorian");
-time.appendChild(timeSolar);
-timeDates.appendChild(timeGregorian);
+timeLunar.setAttribute("class", "time__lunar");
+time.prepend(timeSolar);
+time.prepend(digitalClockElement);
+timeDates.append(timeLunar);
+timeDates.append(timeGregorian);
+/////
 let options = { day: "numeric", month: "long" };
 let today = new Date().toLocaleDateString("fa-IR", options);
 timeSolar.innerHTML = today;
-
-///////
+/////
 function gregorianDate() {
   var dateConstructor = new Date();
   var year = dateConstructor.getFullYear();
@@ -33,10 +37,13 @@ function gregorianDate() {
     "Dec",
   ];
 
-  timeGregorian.innerHTML =
-    `<span id="year-js" class="gregorian__item">${year}/</span>
-  <span id="month-js" class="gregorian__item">${monthName[month]}/</span>
-  <span id="date-js" class="gregorian__item">${date}</span>`.toPersianDigits();
+  timeGregorian.innerHTML = (
+    date +
+    "/" +
+    monthName[month] +
+    "/" +
+    year
+  ).toPersianDigits();
 }
 
 function addZero(i) {
@@ -55,7 +62,10 @@ fetch(`https://api.aladhan.com/v1/gToH?
   date=${today.getDate()}-${today.getMonth() + 1}-${today.getFullYear()}`)
   .then((res) => res.json())
   .then((res) => {
-    document.getElementById("day").innerHTML = res.data.hijri.day;
-    document.getElementById("month").innerHTML = res.data.hijri.month.ar + "/";
-    document.getElementById("year").innerHTML = res.data.hijri.year + "/";
+    timeLunar.innerHTML =
+      res.data.hijri.year +
+      "/" +
+      res.data.hijri.month.ar +
+      "/" +
+      res.data.hijri.day;
   });
