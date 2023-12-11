@@ -13,25 +13,26 @@
 }
 
 .time__solar {
-  color: #222;
   font-size: var(--font-size-lg);
+  color: #222;
   font-weight: bold;
 }
 .time__gregorian {
+  color: var(--secondary-color);
   font-size: 0.5rem;
   direction: ltr;
-  color: var(--secondary-color);
 }
 .time__lunar {
-  font-size: 0.5rem;
   color: var(--secondary-color);
+  font-size: 0.5rem;
 }
 .time__select {
-  font-size: 0.7rem;
+  font-size: var(--font-size-sm);
+  font-family: var(--vazirmatn);
   border-color: var(--border-color);
-  color: #777;
   border-radius: var(--border-radius);
   font-weight: lighter;
   padding: 2px 1px;
   cursor: pointer;
+  color: #777;
 }

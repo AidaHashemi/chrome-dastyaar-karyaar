@@ -2,10 +2,10 @@
   width: 50%;
 }
 .weather__degree {
+  color: var(--secondary-color);
   width: 100%;
   display: inline-block;
   font-size: 1.5rem;
-  color: var(--secondary-color);
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -13,15 +13,15 @@
   gap: 1rem;
 }
 .weather__icon {
-  width: 30px;
+  width: 25px;
 }
 .weather__text {
   font-size: var(--font-size-md);
   font-weight: bold;
 }
 .weather__emoji {
-  margin-right: 10px;
   font-size: var(--font-size-lg);
+  margin-right: 10px;
 }
 .weather__minMax {
   width: 100%;
@@ -32,15 +32,16 @@
 }
 .weather__max,
 .weather__min {
-  font-size: 0.5rem;
   color: var(--secondary-color);
+  font-size: 0.5rem;
 }
 .weather__select {
+  font-size: var(--font-size-sm);
+  font-family: var(--vazirmatn);
   border-color: var(--border-color);
-  color: #777;
   border-radius: var(--border-radius);
   font-weight: lighter;
   padding: 2px 1px;
   cursor: pointer;
-  font-size: 0.7rem;
+  color: #777;
 }

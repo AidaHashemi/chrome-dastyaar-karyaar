@@ -1,4 +1,5 @@
 const time = document.getElementById("time");
+// create an element and set a attr
 const digitalClockElement = document.createElement("span");
 digitalClockElement.setAttribute("class", "time__digital");
 
@@ -12,19 +13,12 @@ async function showTime() {
     var minutes = date.getMinutes();
     minutes = minutes < 10 ? "0" + minutes : minutes;
     hour = hour < 10 ? "0" + hour : hour;
-    var strTime = hour + ":" + minutes;
-    // String.prototype.toPersianDigits();
-    digitalClockElement.innerHTML = strTime.toPersianDigits();
+    var strTime = `${toPersian(hour + "")}:${toPersian(minutes + "")}`;
+    digitalClockElement.innerHTML = strTime;
   } catch (err) {
     console.log(err);
   }
 }
 
-String.prototype.toPersianDigits = function () {
-  var id = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
-  return this.replace(/[0-9]/g, function (w) {
-    return id[+w];
-  });
-};
 setInterval(showTime, 60000);
 showTime();
