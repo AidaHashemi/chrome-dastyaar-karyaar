@@ -1,6 +1,12 @@
 @media (min-width: 768px) {
   body {
-    padding: 3px 78px;
+    padding: 3px 60px;
+  }
+  .header {
+    padding: var(--p-vertical) 0;
+  }
+  .header__icon {
+    font-size: var(--font-size-xl);
   }
   .main {
     grid-template-columns: 1fr 2fr 1fr;
@@ -26,4 +32,11 @@
     grid-template-columns: repeat(6, 1fr);
     justify-content: flex-start;
   }
+  /* .time__alternative {
+    white-space: nowrap;
+  }
+  .weather__select,
+  .time__select {
+    font-size: 8px;
+  } */
 }

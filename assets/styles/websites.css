@@ -1,23 +1,25 @@
 .websites {
   grid-template-columns: 1fr 1fr;
-  gap: var(--gap);
 }
 
 .websites__item {
-  width: 100%;
   background-color: var(--primary-color);
   border-radius: var(--border-radius);
-  height: 85px;
+  height: 88px;
   cursor: pointer;
+}
+.websites__dasti {
+  font-size: var(--font-size-md);
 }
 
 .websites__img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .websites__item span {
   font-size: var(--font-size-md);
+  color: #333;
 }
 
 .websites__plusIcon {

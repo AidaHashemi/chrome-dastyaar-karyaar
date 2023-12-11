@@ -9,12 +9,7 @@ body {
 }
 
 .main {
-  width: 100%;
-  display: grid;
   grid-template-columns: 1fr;
-  /* gap: var(--row-gap); */
-  gap: 0.5rem;
-  /* grid-template-areas: "google", "weather", "application", "todo"; */
 }
 .time-weather {
   background-color: var(--primary-color);
@@ -29,7 +24,7 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 0;
   width: 100%;
   height: 1px;
@@ -40,8 +35,8 @@ body {
   display: block;
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 48%;
   width: 1px;
-  height: 55%;
+  height: 60%;
   background-color: var(--light-color);
 }

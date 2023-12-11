@@ -2,7 +2,6 @@
   width: 50%;
 }
 .time__digital {
-  width: 100%;
   display: inline-block;
   font-size: 1.5rem;
   color: #2a6ff7;
@@ -13,18 +12,24 @@
 }
 
 .time__solar {
-  font-size: var(--font-size-lg);
-  color: #222;
+  font-size: var(--font-size-md);
   font-weight: bold;
 }
+.time__dates {
+  text-align: center;
+  color: #333;
+}
 .time__gregorian {
-  color: var(--secondary-color);
+  text-align: center;
   font-size: 0.5rem;
   direction: ltr;
 }
 .time__lunar {
-  color: var(--secondary-color);
+  text-align: center;
   font-size: 0.5rem;
+}
+.time__alternative {
+  white-space: nowrap;
 }
 .time__select {
   font-size: var(--font-size-sm);
@@ -32,7 +37,6 @@
   border-color: var(--border-color);
   border-radius: var(--border-radius);
   font-weight: lighter;
-  padding: 2px 1px;
   cursor: pointer;
   color: #777;
 }

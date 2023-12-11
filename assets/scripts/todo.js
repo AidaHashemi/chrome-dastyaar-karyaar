@@ -1,24 +1,26 @@
 const form = document.getElementById("form");
 const inputBox = document.getElementById("input-box");
 const listcontainer = document.getElementById("list");
-// const li = document.createElement("li");
-// li.setAttribute("class", "todo__item");
-// listcontainer.appendChild(li);
-
+// when submit the form
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (inputBox.value.trim().length === 0) {
     alert("you must write something");
   } else if (inputBox.value.trim() !== "") {
     listcontainer.innerHTML += `<li class="todo__item d-flex justify-between align-center">
-   <span class="todo__task d-flex gap-md align-center">
-   <i class="fa-regular fa-square-check todo__check"></i>
-  <i class="far fa-square todo__square"></i><span class="todo__inputValue">${inputBox.value.trim()}</span>
-   </span>
-     <span class="todo__icons d-flex gap-lg">
-       <i class="fas fa-pen"></i>
-       <i class="far fa-trash-alt todo__trash"></i>
-     </span>
+      <span class="todo__ellips ">
+        <i class="fas fa-ellipsis-v"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </span>
+      <span class="todo__task d-flex gap-md align-center">
+         <i class="fa-regular fa-square-check todo__check"></i>
+         <i class="far fa-square todo__square"></i>
+         <span class="todo__inputValue">${inputBox.value.trim()}</span>
+      </span>
+      <span class="todo__icons d-flex gap-lg">
+         <i class="fas fa-pen"></i>
+         <i class="far fa-trash-alt todo__trash"></i>
+      </span>
      </li>`;
   }
   inputBox.value = "";

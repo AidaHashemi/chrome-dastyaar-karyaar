@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 700;
   gap: 1rem;
 }
 .weather__icon {
@@ -18,21 +19,20 @@
 .weather__text {
   font-size: var(--font-size-md);
   font-weight: bold;
+  white-space: nowrap;
 }
-.weather__emoji {
-  font-size: var(--font-size-lg);
-  margin-right: 10px;
-}
+
 .weather__minMax {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: var(--gap);
+  text-align: center;
+  color: #333;
 }
 .weather__max,
 .weather__min {
-  color: var(--secondary-color);
   font-size: 0.5rem;
 }
 .weather__select {
@@ -41,7 +41,6 @@
   border-color: var(--border-color);
   border-radius: var(--border-radius);
   font-weight: lighter;
-  padding: 2px 1px;
   cursor: pointer;
   color: #777;
 }

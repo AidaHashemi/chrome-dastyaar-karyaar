@@ -8,6 +8,3 @@ function toPersian(str) {
   }
   return arr.join("");
 }
-
-// var test = toPersian("154");
-// alert(test);

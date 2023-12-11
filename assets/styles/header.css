@@ -1,10 +1,10 @@
 .header {
   width: 100%;
-  padding: var(--p-vertical) 0;
+  padding: var(--p-2) 0;
   border-radius: var(--border-radius);
   justify-content: end;
 }
 .header__icon {
   color: var(--primary-color);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
 }

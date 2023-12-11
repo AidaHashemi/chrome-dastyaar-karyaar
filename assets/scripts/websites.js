@@ -1,11 +1,5 @@
 const websites = document.getElementById("websites");
-const images = ["nightSite.png", "youtube.png", "codepen.png"];
-const adress = [
-  "https://www.shab.ir/",
-  "https://www.youtube.com/",
-  "https://codepen.io/trending",
-];
-const names = ["شب", "youtube", "codepen"];
+// when body loades
 document.body.onload = addElement;
 
 function addElement() {
@@ -17,13 +11,22 @@ function addElement() {
     );
     if (i >= 0 && i < 3) {
       const webName = document.createElement("span");
-      webName.innerHTML = names[i];
-      newDiv.innerHTML = `<a href="${adress[i]}" target="_blank"><img class="websites__img" src="../../assets/images/${images[i]}"/></a>`;
+      webName.innerHTML = webInfo.names[i];
+      newDiv.innerHTML = `<a href="${webInfo.adress[i]}" target="_blank"><img class="websites__img" src="../../assets/images/${webInfo.images[i]}"/></a>`;
       newDiv.appendChild(webName);
     } else {
       newDiv.innerHTML = `<i class="fas fa-plus websites__plusIcon"></i>`;
     }
-
     websites.appendChild(newDiv);
   }
 }
+
+const webInfo = {
+  images: ["nightSite.png", "youtube.png", "codepen.png"],
+  adress: [
+    "https://www.shab.ir/",
+    "https://www.youtube.com/",
+    "https://codepen.io/trending",
+  ],
+  names: ["شب", "youtube", "codepen"],
+};

@@ -1,18 +1,24 @@
 .todo {
   background-color: var(--primary-color);
   border-radius: var(--border-radius);
-  padding: var(--p-2);
   padding-top: var(--p-vertical);
   padding-bottom: var(--p-vertical);
+  margin-bottom: 1.5rem;
+  position: relative;
 }
 .todo-heading {
   font-size: 1.1rem;
+  padding: 0 var(--p-2);
 }
-.todo__list {
-  height: 70vh;
+
+.todo__listContainer {
+  height: 60vh;
   overflow-y: auto;
   border: 1px solid var(--border-color);
+}
+.todo__list {
   border-radius: var(--border-radius);
+  height: 100%;
   padding: var(--p-2);
   flex-direction: column-reverse;
   justify-content: start;
@@ -26,7 +32,15 @@
 
 .todo__task {
   width: 100%;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
+  font-weight: bold;
+  color: #333;
+}
+.todo__ellips {
+  display: flex;
+  color: var(--border-color);
+  margin-left: 5px;
+  display: none;
 }
 
 .todo__inputValue {
@@ -49,16 +63,17 @@
   font-weight: lighter;
   font-size: var(--font-size-md);
   cursor: pointer;
-
   display: none;
 }
 
-.todo__item:hover .todo__icons {
+.todo__item:hover .todo__icons,
+.todo__item:hover .todo__ellips {
   display: flex;
 }
 
 .todo__row {
   position: relative;
+  padding: 0 var(--p-2);
 }
 
 .todo__input {

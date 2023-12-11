@@ -4,25 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>دستیار</title>
-
     <link rel="stylesheet" href="assets/fonts/css/all.min.css" />
     <link rel="stylesheet" href="assets/fonts/css/fontawesome.min.css" />
+    <!-- favicon -->
     <link
       rel="shortcut icon"
       type="image/webp"
       href="assets/images/dastyarlogo.webp"
     />
+    <!-- custom css  -->
     <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
   <body>
     <section class="container d-grid w-100">
+      <!-- header  -->
       <header class="header d-flex align-center">
         <div class="d-flex gap-xl">
           <i class="fa-solid fa-user header__icon"></i>
           <i class="fas fa-cog icon header__icon"></i>
         </div>
       </header>
-      <main class="main">
+      <!-- main  -->
+      <main class="main d-grid w-100 gap-md">
+        <!-- google  -->
         <section class="google">
           <input
             type="text"
@@ -37,7 +41,9 @@
           />
           <i class="fas fa-search google__icon"></i>
         </section>
-        <section class="time-weather d-flex">
+        <!-- time weather section  -->
+        <section class="time-weather d-flex justify-center">
+          <!-- time  -->
           <section class="time d-flex-col align-center gap-md" id="time">
             <div
               class="time__dates d-flex align-center justify-center w-100 gap-md"
@@ -52,6 +58,7 @@
               </select>
             </div>
           </section>
+          <!-- weather  -->
           <div class="weather d-flex-col align-center gap-md" id="weather">
             <div class="weather__alternative">
               <select class="weather__select">
@@ -60,7 +67,8 @@
             </div>
           </div>
         </section>
-        <section class="websites d-grid" id="websites">
+        <!-- websites  -->
+        <section class="websites d-grid gap-md" id="websites">
           <div
             class="websites__item websites__item--color d-flex-col justify-center align-center"
           >
@@ -69,12 +77,15 @@
               <i class="fas fa-ellipsis-v"></i>
               <i class="fas fa-ellipsis-v"></i>
             </div>
-            <p>دم دستی</p>
+            <p class="websites__dasti">دم دستی</p>
           </div>
         </section>
+        <!-- todo  -->
         <section class="todo d-flex-col gap-md w-100">
           <h2 class="todo-heading">دست نویس</h2>
-          <ul class="todo__list d-flex gap-md" id="list"></ul>
+          <div class="todo__listContainer">
+            <ul class="todo__list d-flex gap-md" id="list"></ul>
+          </div>
           <div class="todo__row">
             <form action="#" id="form">
               <input
@@ -98,7 +109,5 @@
     <script src="assets/scripts/weather.js"></script>
     <script src="assets/scripts/websites.js"></script>
     <script src="assets/scripts/todo.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <div id="log"></div>
   </body>
 </html>
