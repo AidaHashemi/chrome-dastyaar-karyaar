@@ -39,32 +39,31 @@ form.addEventListener("submit", (e) => {
 
 listcontainer.addEventListener("click", function (e) {
   const eTarget = e.target.classList;
-  const eParent = e.target.parentElement;
-  const display = style.display;
-  const textDecoration = style.textDecoration;
-  const color = style.color;
 
   //________________________delet a task
   if (eTarget.contains("todo__trash")) {
+    const eParent = e.target.parentElement;
     eParent.parentElement.remove();
 
     saveData();
   }
   // ______________________check a task
   else if (eTarget.contains("todo__square")) {
+    const eParent = e.target.parentElement;
     e.target.display = "none";
-    eParent.querySelector(".todo__check").display = "flex";
-    eParent.querySelector(".todo__inputValue").color = "gray";
-    eParent.querySelector(".todo__inputValue").textDecoration =
+    eParent.querySelector(".todo__check").style.display = "flex";
+    eParent.querySelector(".todo__inputValue").style.color = "gray";
+    eParent.querySelector(".todo__inputValue").style.textDecoration =
       "line-through gray";
 
     saveData();
   }
   //_______________________uncheck a task
   else if (eTarget.contains("todo__check")) {
-    eParent.querySelector(".todo__inputValue").textDecoration = "none";
-    eParent.querySelector(".todo__inputValue").color = "#111";
-    eParent.querySelector(".todo__square").display = "inline-block";
+    const eParent = e.target.parentElement;
+    eParent.querySelector(".todo__inputValue").style.textDecoration = "none";
+    eParent.querySelector(".todo__inputValue").style.color = "#111";
+    eParent.querySelector(".todo__square").style.display = "inline-block";
     e.target.display = "none";
 
     saveData();
