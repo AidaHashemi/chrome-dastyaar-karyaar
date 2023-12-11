@@ -1,4 +1,5 @@
 const time = document.getElementById("time");
+
 // create an element and set a attr
 const digitalClockElement = document.createElement("span");
 digitalClockElement.setAttribute("class", "time__digital");
@@ -20,6 +21,7 @@ async function showTime() {
   }
 }
 
+// function for converting digits to Farsi
 function toPersian(str) {
   const persianDigits = "۰۱۲۳۴۵۶۷۸۹";
   let arr = str.split("");

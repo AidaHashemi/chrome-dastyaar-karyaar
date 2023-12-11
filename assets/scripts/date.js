@@ -1,21 +1,27 @@
+// select DOM element
 const timeDates = document.getElementById("time__dates");
+
+// create elements
 const timeSolar = document.createElement("span");
 const timeGregorian = document.createElement("div");
 const timeLunar = document.createElement("div");
+
+// set attr
 timeSolar.setAttribute("class", "time__solar");
 timeGregorian.setAttribute("class", "time__gregorian");
 timeLunar.setAttribute("class", "time__lunar");
+
 time.prepend(timeSolar);
 time.prepend(digitalClockElement);
 timeDates.append(timeLunar);
 timeDates.append(timeGregorian);
 
-// get solar date
+//____________________get solar date
 let options = { day: "numeric", month: "long" };
 let todayIs = new Date().toLocaleDateString("fa-IR", options);
 timeSolar.innerHTML = todayIs;
 
-// get gregorian date
+//____________________get gregorian date
 function gregorianDate() {
   let dateConstructor = new Date();
   let year = dateConstructor.getFullYear();
@@ -41,10 +47,12 @@ function gregorianDate() {
   ];
 
   let timeGregorianContent = year + "/" + monthName[month] + "/" + date;
+
   let timeGregorianContentPersian = toPersian(timeGregorianContent);
+
   timeGregorian.innerHTML = timeGregorianContentPersian;
 }
-//  add zero for numbers less than 10
+//____________________add zero for numbers less than 10
 function addZero(i) {
   if (i < 10) {
     i = "0" + i;
@@ -53,18 +61,20 @@ function addZero(i) {
 }
 gregorianDate();
 
-// get lunar date
+//____________________get lunar date
 let today = new Date();
 fetch(`https://api.aladhan.com/v1/gToH?
   date=${today.getDate()}-${today.getMonth() + 1}-${today.getFullYear()}`)
   .then((response) => response.json())
   .then((response) => {
     let timeLunarContent =
-      response.data.hijri.year +
-      "/" +
-      response.data.hijri.month.ar +
-      "/" +
-      response.data.hijri.day;
+                           response.data.hijri.year +
+                            "/" +
+                           response.data.hijri.month.ar +
+                           "/" +
+                           response.data.hijri.day;
+
     let timeLunarContentPersian = toPersian(timeLunarContent);
+
     timeLunar.innerHTML = timeLunarContentPersian;
   });
