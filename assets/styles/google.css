@@ -1,27 +1,24 @@
 .google {
-  position: relative;
-  /* width: 100%; */
   background-color: var(--primary-color);
-  padding: var(--p-vertical);
   border-radius: var(--border-radius);
+  padding: var(--p-vertical) 1.4rem;
+  position: relative;
 }
 
 .google__input {
-  grid-area: google;
-  width: 100%;
+  background-color: var(--light-color);
   padding: var(--p-vertical) var(--p-2);
+  color: var(--secondary-color);
+  border-radius: 30px;
   padding-inline: 2rem;
+  letter-spacing: 1px;
   border: none;
   outline: none;
-  background-color: var(--light-color);
-  color: var(--secondary-color);
-  border-radius: var(--border-radius);
-  letter-spacing: 1px;
 }
 
 .google__input::placeholder {
-  font-size: var(--font-size-lg);
-  font-family: Vazirmatn;
+  font-size: var(--font-size-md);
+  font-family: var(--vazirmatn);
 }
 
 .google__logo,
@@ -32,15 +29,15 @@
 }
 
 .google__logo {
-  right: 15px;
+  right: 1.8rem;
   width: 1.5rem;
 }
 
 .google__icon {
-  font-size: var(--font-size-lg);
-  left: 15px;
   background-color: var(--dark-blue-color);
+  font-size: var(--font-size-lg);
   color: var(--primary-color);
+  border-radius: 30px;
   padding: 6px 15px;
-  border-radius: var(--border-radius);
+  left: 2rem;
 }
