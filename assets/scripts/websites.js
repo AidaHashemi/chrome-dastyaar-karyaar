@@ -12,7 +12,7 @@ function addElement() {
     if (i >= 0 && i < 3) {
       const webName = document.createElement("span");
       webName.innerHTML = webInfo.names[i];
-      newDiv.innerHTML = `<a href="${webInfo.adress[i]}" target="_blank"><img class="websites__img" src="../../assets/images/${webInfo.images[i]}"/></a>`;
+      newDiv.innerHTML = `<a href="${webInfo.adress[i]}" target="_blank"><img class="websites__img" src="assets/images/${webInfo.images[i]}"/></a>`;
       newDiv.appendChild(webName);
     } else {
       newDiv.innerHTML = `<i class="fas fa-plus websites__plusIcon"></i>`;

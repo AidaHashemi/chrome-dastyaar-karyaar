@@ -22,8 +22,8 @@ async function forecast() {
     if (item.dateTitle === "امروز") {
       // degree and img/icon
       weatherDegree.innerHTML = `
-        ${toPersian(item.current + "")}&#176
-        <img class="weather__icon" src="../../assets/images/${
+        ${toPersian(Math.round(item.current) + "")}°
+        <img class="weather__icon" src="assets/images/${
           date.getHours() > 6 ? "icons8-cloud-64.png" : "icons8-night-64.png"
         }">`;
 
@@ -35,10 +35,10 @@ async function forecast() {
 
       // min max degree
       minMax.innerHTML = `<span class="weather__max">
-        ${toPersian(item.max + "")}&#176 حداکثر
+        ${toPersian(Math.round(item.max) + "")}° حداکثر
         </span>
-        <span class="weather__min">&#176
-        ${toPersian(item.min + "")} حداقل
+        <span class="weather__min">°
+        ${toPersian(Math.round(item.min) + "")} حداقل
         </span>`;
     }
   }
