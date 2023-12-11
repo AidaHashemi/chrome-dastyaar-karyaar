@@ -12,7 +12,7 @@
 }
 
 .todo__listContainer {
-  height: 60vh;
+  height: 65vh;
   overflow-y: auto;
   border: 1px solid var(--border-color);
 }

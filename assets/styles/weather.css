@@ -20,6 +20,7 @@
   font-size: var(--font-size-md);
   font-weight: bold;
   white-space: nowrap;
+  margin-top: -10px;
 }
 
 .weather__minMax {
@@ -33,7 +34,7 @@
 }
 .weather__max,
 .weather__min {
-  font-size: 0.5rem;
+  font-size: 0.6rem;
 }
 .weather__select {
   font-size: var(--font-size-sm);

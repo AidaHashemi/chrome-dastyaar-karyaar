@@ -12,21 +12,37 @@
 }
 
 .time__solar {
+  margin-top: -10px;
   font-size: var(--font-size-md);
   font-weight: bold;
 }
 .time__dates {
   text-align: center;
+
   color: #333;
+  gap: 6px;
 }
+
 .time__gregorian {
   text-align: center;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   direction: ltr;
 }
 .time__lunar {
   text-align: center;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
+  position: relative;
+}
+.time__lunar::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -3px;
+  width: 2px;
+  height: 80%;
+  transform: translateY(-50%);
+  background-color: var(--border-color);
 }
 .time__alternative {
   white-space: nowrap;
